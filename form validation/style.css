@@ -1,0 +1,39 @@
+body{
+    background-color: white;
+    top: 0px;
+}
+.container{
+    background-color: white;
+    width: 800px;
+    margin-top: 40px;
+    height: 90vh;
+}
+.container #username{
+    margin-top: 20px;
+
+}
+.container #username label{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container #otherpart{
+    margin-top: 10px;
+}
+.container #otherpart label{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container #blank{
+    margin-top: 25px;
+    margin-bottom: -20px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: 600;   
+}
+.container img{
+    width: 90px;
+    margin-top: -25px;
+}
+.container #otherpart button{
+    margin-top: 10px;
+}

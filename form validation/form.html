@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <div id="success">
+
+        </div>
+
+
+        <div class="container">
+            <div class="row g-3"id="username">
+                <div class="col">
+                    <label for="firstname">First Name :</label>
+                    <input id="firstname" type="text" class="form-control " placeholder="First name" aria-label="First name" name="firstname" >
+                    <small id="firstnamevalid" class="form-text text-muted invalid-feedback">
+                        Your Firstname must be 2-10 characters long and should not start with a number
+                      </small>
+                </div>
+                <div class="col">
+                    <label for="firstname">Last Name :</label>
+                    <input id="lastname" type="text" class="form-control" placeholder="Last name" aria-label="Last name" >
+                    <small id="lastnamevalid" class="form-text text-muted invalid-feedback">
+                        Your Lastname must be 2-10 characters long and should not start with a number
+                      </small>
+                </div>
+            </div>
+
+            <form class="row g-3" id="otherpart">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email :</label>
+                    <input type="email" class="form-control" id="email" placeholder="abc@gmail.com">
+                    <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                        Your Email is in-valid.
+                      </small>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password :</label>
+                    <input type="password" class="form-control"
+                        id="password">
+                        <small id="passwordvalid" class="form-text text-muted invalid-feedback">
+                            Your Password must be 5-8 character. 
+                          </small>
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address :</label>
+                    <input type="text" class="form-control" id = "address"
+                        placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2 :</label>
+                    <input type="text" class="form-control" id = "address2"
+                        placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-4">
+                    <label for="inputAddress2" class="form-label">Phone no :</label>
+                    <input type="text" class="form-control"  id = "phone"
+                        placeholder="92+ 3432992579">
+                        <small id="phonevalid" class="form-text text-muted invalid-feedback">
+                            Your Phone no should have 11 numbers.  
+                          </small>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Country :</label>
+                    <input type="text" class="form-control" id="country" value="Pakistan" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">City :</label>
+                    <select id="city" class="form-select" >
+                        <option selected>Choose...</option>
+                        <option>Karachi</option>
+                        <option>Lahore</option>
+                        <option>Islamabad</option>
+                        <option>Peshawar</option>
+                        <option>Rawalpindi</option>
+                        <option>Quetta</option>
+                        <option>Multan</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">State :</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Sindh</option>
+                        <option>Punjab</option>
+                        <option>Balochistan</option>
+                        <option>Khyber pakhtunkha</option>
+                    </select>
+    
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" id="checkout">Checkout</button>
+                </div>
+            </form>      
+        </div>
+
+        
+       
+        
+        
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+        <script src="script.js"></script>
+    </body>
+</html>

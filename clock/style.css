@@ -1,0 +1,25 @@
+body{
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+}
+#clock{
+    font-size: 60px;
+    border: none;
+    color: aliceblue;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    width: 500px;
+    text-align: left;
+    height: 100px;
+    
+}
+#date{
+    color: aliceblue;
+    font-size: 60px;
+    text-align: left;
+    background-color: black;
+    width: 500px;
+    height: 100px;
+}
